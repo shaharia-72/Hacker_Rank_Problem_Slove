@@ -1,28 +1,39 @@
 #include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
 
 int main()
 {
-    int N, M;
-    scanf("%d %d", &N, &M);
-
-    int arr[N][M];
-
-    for (int i = 0; i < N; i++)
+    int t;
+    int i;
+    int val, pos, k = 1;
+    scanf("%d", &t);
+    while (t--)
     {
-        for (int j = 0; j < M; j++)
+        int flag = 0;
+        int num;
+        scanf("%d", &num);
+        int arr[num];
+        for (int i = 1; i <= num; i++)
         {
-            scanf("%d", &arr[i][j]);
+            scanf("%d", &arr[i]);
         }
-    }
 
-    for (int i = 0; i < N; i++)
-    {
-        for (int j = 0; j < M; j++)
+        scanf("%d", &val);
+        for (i = 1; i <= num; i++)
         {
-            printf("%d ", arr[i][j]);
+            if (arr[i] == val)
+            {
+                pos = i;
+                flag = 1;
+            }
         }
-        printf("\n"); // add a new line after each row
+        if (flag)
+            printf("Case %d: %d\n", k, pos);
+        else
+            printf("Case %d: Not Found\n", k);
+        k++;
     }
-
     return 0;
 }
