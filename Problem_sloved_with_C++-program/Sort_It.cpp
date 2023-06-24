@@ -78,13 +78,6 @@ bool cmp(Student a, Student b)
     {
         return a.id < b.id;
     }
-    // else if (a.full_marks <= b.full_marks)
-    // {
-    //     if (a.id > b.id)
-    //     {
-    //         return true;
-    //     }
-    // }
 
     return false;
 }
@@ -98,14 +91,9 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
-        // cin.ignore();
-        // char name[100];
-        // fgets(name, sizeof(name), stdin);
-        // arr[i].nm = name;
-        // getline(cin, arr[i].nm);
-        // cin.ignore();
+
         cin >> arr[i].nm >> arr[i].cls >> arr[i].s >> arr[i].id >> arr[i].math_marks >> arr[i].eng_marks;
-        // cin >> arr[i].cls >> arr[i].s >> arr[i].id >> arr[i].math_marks >> arr[i].eng_marks;
+
         cin.ignore();
         arr[i].full_marks = arr[i].math_marks + arr[i].eng_marks;
     }
@@ -115,8 +103,6 @@ int main()
     for (int i = 0; i < n; i++)
     {
         cout << arr[i].nm << " " << arr[i].cls << " " << arr[i].s << " " << arr[i].id << " " << arr[i].math_marks << " " << arr[i].eng_marks << endl;
-
-        // cout << arr[i].full_marks << endl;
     }
 
     return 0;
