@@ -124,5 +124,8 @@
   ],
   "C_Cpp_Runner.useUndefinedSanitizer": false,
   "C_Cpp_Runner.useLeakSanitizer": false,
-  "cph.general.onceMaintainerMessage": false
+  "cph.general.onceMaintainerMessage": false,
+  "cSpell.words": [
+    "mylist"
+  ]
 }
