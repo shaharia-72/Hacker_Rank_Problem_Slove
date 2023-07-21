@@ -127,5 +127,6 @@
   "cph.general.onceMaintainerMessage": false,
   "cSpell.words": [
     "mylist"
-  ]
+  ],
+  "C_Cpp_Runner.useLinkTimeOptimization": false
 }
