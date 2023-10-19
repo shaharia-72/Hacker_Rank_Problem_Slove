@@ -42,80 +42,6 @@ Rate This Challenge:
 More
 */
 
-// #include <bits/stdc++.h>
-//     using namespace std;
-// int main()
-// {
-//     int t;
-//     cin >> t;
-//     cin.ignore();
-
-//     while (t--)
-//     {
-//         string sentence;
-//         getline(cin, sentence);
-//         string word;
-//         stringstream ss(sentence);
-
-//         map<string, int> word_count;
-
-//         while (ss >> word)
-//         {
-//             word_count[word]++;
-//         }
-
-//         for (auto it = word_count.begin(); it != word_count.end(); it++)
-//         {
-//             // cout<<it->first<<" "<<it->second<<endl;
-//         }
-
-//         // string most_word;
-//         // int count = 0;
-//         // bool x = true;
-//         // for (auto &it : word_count)
-//         // // for (it = word_count.begin(); it != word_count.end(); it++)
-//         // {
-//         //     if (it.second > count || x && it.second == count)
-//         //     {
-//         //         most_word = it.first;
-//         //         count = it.second;
-//         //         x = false;
-//         //     }
-//         // }
-//         // cout << most_word << " " << count << endl;
-
-//         string most_word;
-//         int count = 0;
-//         bool x = true;
-
-//         // for (auto &it : word_count)
-//         for (auto it = word_count.begin(); it != word_count.end(); it++)
-//         {
-//             if (it->second > count)
-//             {
-//                 most_word = it->first;
-//                 count = it->second;
-//                 x = false;
-//             }
-//             // else if (it->second == count)
-//             else if (it->second == count && !x)
-//             {
-//                 most_word = it->first;
-//                 x = true;
-//             }
-//             // {
-//             //     most_word = it->first;
-//             //     count = it->second;
-//             //     if (it->second == count)
-//             //         x = false;
-//             // }
-//         }
-//         cout << most_word << " " << count << endl;
-//     }
-
-//     return 0;
-// }
-
 #include <bits/stdc++.h>
 using namespace std;
 int main()
@@ -128,9 +54,8 @@ int main()
     {
         map<string, int> mp;
         string sentence;
-        // cin.ignore();
+
         getline(cin, sentence);
-        // cin.ignore();
 
         stringstream ss(sentence);
         string word;
